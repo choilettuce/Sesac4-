@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+</head>
+
+
+<body>
+   
+   <br>
+   <div>값1 :<input type="text"  id="info" placeholder="첫번째 숫자를 입력해주세요" ></div>
+   <br>
+   <div>값2 :<input type="text"  id="info2" placeholder="두번째 숫자를 입력해주세요" ></div>
+   <br>
+   <div>연산자 :<input type="text"  id="info3" placeholder="연산자를 입력해주세요" ></div>
+   <br>
+   <button type="button" onclick="operator()">계산하기</button>
+   <button type="button" onclick="reset();">초기화</button>
+
+   <br>
+   <div>
+    결과 : <input type="text" id="result">
+    </div>  
+
+
+
+    <script>
+
+        var a;
+        var b;
+
+        function set(){
+            a = parseInt(document.getElementById("info").value);
+            b = parseInt(document.getElementById("info2").value);
+        }
+
+        function operator(){
+            set();
+            if (document.getElementById('info3').value == "+") {
+                document.getElementById('result').value = a+b;
+            }
+            if (document.getElementById('info3').value == "-") {
+                document.getElementById('result').value = a-b;
+            }
+            if (document.getElementById('info3').value == "*") {
+                document.getElementById('result').value = a*b;
+            }
+            if (document.getElementById('info3').value == "/") {
+                if (v2 == 0) {
+                return "나눌 수가 없음"
+                }
+                document.getElementById('result').value = a/b;
+            }
+        }
+
+        function reset() {
+            window.location.reload()
+        }
+        
+        
+        
+        /*
+        var result
+        function add(a,b) {
+        
+        return String(a+b);
+        }
+        function sub(a,b) {
+        
+        return String(a-b);
+        }
+        function mul(a,b) {
+        
+        return String(a*b);
+        }
+        function divide(a,b) {
+      
+        return String(a/b);
+        }
+
+        function operator(c) {
+  
+            let result = 0;
+            var c = Value3
+
+  if(c == '+') {
+    result = add(a,b);
+    
+  }
+  else if(c == '-') {
+    result = sub(a,b);
+    
+  }
+  else if(c == '*') {
+    result = mul(a,b);
+    
+  }
+  else if(c == '/') {
+    result = divide(a,b);
+    
+  }
+  return String(result);
+} 
+*/
+            
+
+</script>
+
+   
+    
+</body>
+</html>
