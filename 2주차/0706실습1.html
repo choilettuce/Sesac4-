@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <script src="jquery-ui-1.13.1.custom/jquery-ui.js"> </script>
+    
+    <link rel ="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.css">
+
+    <style>
+         div {
+            width : 500px;
+            height : 500px;
+            
+         }
+        .css1 {
+            background-color :skyblue;
+            width : 500px;
+            height : 500px;
+        }
+        .css2 {
+            background-image : url("..\image\딸기.jpg");
+            width : 500px;
+            height : 500px;
+        }
+        .css3 {
+            background-image : "C:\Users\user\Desktop\image\사과.jpg";
+            width : 500px;
+            height : 500px;
+            
+        }
+        .css4 {
+            background-image : "C:\Users\user\Desktop\image\포도.jpg";
+            width : 500px;
+            height : 500px;
+        }
+        .css5 {
+            background-image : "C:\Users\user\Desktop\image\배.jpg";
+            width : 500px;
+            height : 500px;
+        }
+    </style>    
+
+    <script>    
+     function switchClass1() {
+            if ($("div").hasClass("css1")) {
+                $("div").switchClass("css1", "css2",3000);
+            } else if ( ("div").hasClass("css2")) {
+                $("div").switchClass("css2", "css1",3000);
+            }
+        }
+        function switchClass2() {
+            if ($("div").hasClass("css1")) {
+                $("div").switchClass("css1", "css3",3000);
+            } else if ( ("div").hasClass("css3")) {
+                $("div").switchClass("css3", "css1",3000);
+            }
+        }
+        function switchClass3() {
+            if ($("div").hasClass("css1")) {
+                $("div").switchClass("css1", "css4",3000);
+            } else if ( ("div").hasClass("css4")) {
+                $("div").switchClass("css4", "css1",3000);
+            }
+        }
+        function switchClass4() {
+            if ($("div").hasClass("css1")) {
+                $("div").switchClass("css1", "css5",3000);
+            } else if ( ("div").hasClass("css5")) {
+                $("div").switchClass("css5", "css1",3000);
+            }
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+    <div class="css1"> <p>과일을 골라볼게요</p> </div>
+    
+    <button type="button" onclick="switchClass1()">딸기</button>
+    <button type="button" onclick="switchClass2()">사과</button>
+    <button type="button" onclick="switchClass3()">포도</button>
+    <button type="button" onclick="switchClass4()">배</button>
+</body>
+</html>

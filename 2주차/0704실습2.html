@@ -9,10 +9,10 @@
 <body>
     <h1>방명록입니다.<h2>
 
-        <div><input type="text" id="info1" placeholder="작성자를 입력해주세요."> 작성자 : </div>
-        <div><input type="text" id="info2" placeholder="내용을 입력해주세요."></div>
+        <div>작성자 : <input type="text" id="name" placeholder="작성자를 입력해주세요."> </div>
+        <div>내용 : <input type="text" id="content" placeholder="내용을 입력해주세요."></div>
         <div><button onclick="">작성</button> </div>
-        <table border="1px" cellpspacing="1" cellspading="1">
+        <table border="1" cellpspacing="1" cellspading="1">
             <tr>
                 <th>번호</th>
                 <th>작성자</th>
@@ -23,19 +23,21 @@
 
     
         <script>
-            var p1;
-            var p2;
-            var p3;
+            
 
             function time() {
                 p1 = new Date();
             }
 
-            function addNode() {
-                var p1 = document.createElement(
-                    <td></td>);
-                var p2 = document.getElementById('info1');
-                var p3 = document.getElementById('info2');
+            function writeNote() {
+                var name = document.createElement(name);
+                var content = document.getElementById('info1');
+
+                var table = document.getElementById();
+                var garo = document.createElement("tr");
+
+                var kan1 = document.createElement("td");
+                kan1.innerText = document.querySelectorAll("#table tr");
                 
             
             }
