@@ -1,48 +1,0 @@
-
-var ftGUID_5887106="5280A9FC4315B0";
-var ftConfID_5887106="0";
-var ftParams_5887106="ft_custom=icI9DafgDCShiT4upvB8J-bGFF2mxnym4rs=&ftOBA=1&ft_domain=namu.wiki&ft_ifb=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fnamu.wiki%2F&gdpr=0&cachebuster=520359.62802218273";
-var ftKeyword_5887106="";
-var ftCustom_5887106="icI9DafgDCShiT4upvB8J-bGFF2mxnym4rs=";
-var ftSection_5887106="";
-var ftSegment_5887106="aiyn,afr5,ai3l,ai3n";
-var ftSegmentList_5887106=[{s:'aiyn'},{s:'afr5'},{s:'ai3l'},{s:'ai3n'}];
-var ftRuleMatch_5887106="0";
-var ftTimestamp_5887106="1657430610";
-var ftGeoC2_5887106="kr";
-var ftGeoState_5887106="11";
-var ftGeoCity_5887106="yeongdeungpo-dong";
-var ftISP_5887106="sk broadband co ltd";
-var ftSpeed_5887106="broadband";
-var ftDMA_5887106="410024";
-var ftLong_5887106="126.91";
-var ftLat_5887106="37.51";
-var ftPostal_5887106="07305";
-var ftTimeZone_5887106="900";
-var ftMobileCarrier_5887106="";
-var ftImp5887106 = {};
-ftImp5887106.privacy = "x";
-ftImp5887106.guidAge = "24";
-ftImp5887106.impID = "3611FE88-E259-4BB7-9219-36F0390527A6";
-ftImp5887106.duid = "FT:5280A9FC4315B0";
-
-ftImp5887106.ft_tpplid = "";
-ftImp5887106.ft_c = {};
-ftImp5887106.gdpr = "0";
-ftImp5887106.gdpr_consent = "";
-ftImp5887106.gdpr_pd = "";
-ftImp5887106.oob_consent = "";
-ftImp5887106.gdprStoredConsent = "";
-ftImp5887106.us_privacy = "";
-
-ftImp5887106.jsAppend = "1";
-(function(){
-    var tag = document.getElementById('ft_servedby_5887106') || (function(s){
-    	return s[s.length-1];
-    }(document.getElementsByTagName('script'))),
-           js = document.createElement('script');
-    js.src =
-"https://cdn.flashtalking.com/xre/588/5887106/3879803/js/j-5887106-3879803.js";
-    js.id = "ftscript_m5887106";
-    tag.parentNode.insertBefore(js, tag);
-}());

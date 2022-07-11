@@ -1,48 +1,0 @@
-
-var ftGUID_4214724="5280A9FC4315B0";
-var ftConfID_4214724="0";
-var ftParams_4214724="ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fc1ae511bb16c93934f2646989fb3d674.safeframe.googlesyndication.com%2Fsafeframe%2F1-0-38%2Fhtml%2Fcontainer.html&us_privacy=${US_PRIVACY}&cachebuster=484453.5199754496&ft_dv=%5B%25ft_dv%25%5D";
-var ftKeyword_4214724="";
-var ftCustom_4214724="";
-var ftSection_4214724="";
-var ftSegment_4214724="aiyn,afr5,ai3l,ai3n";
-var ftSegmentList_4214724=[{s:'aiyn'},{s:'afr5'},{s:'ai3l'},{s:'ai3n'}];
-var ftRuleMatch_4214724="0";
-var ftTimestamp_4214724="1657430614";
-var ftGeoC2_4214724="kr";
-var ftGeoState_4214724="11";
-var ftGeoCity_4214724="yeongdeungpo-dong";
-var ftISP_4214724="sk broadband co ltd";
-var ftSpeed_4214724="broadband";
-var ftDMA_4214724="410024";
-var ftLong_4214724="126.91";
-var ftLat_4214724="37.51";
-var ftPostal_4214724="07305";
-var ftTimeZone_4214724="900";
-var ftMobileCarrier_4214724="";
-var ftImp4214724 = {};
-ftImp4214724.privacy = "x";
-ftImp4214724.guidAge = "24";
-ftImp4214724.impID = "34E6A1E1-56E3-8D9D-B944-65F59E3EDE47";
-ftImp4214724.duid = "FT:5280A9FC4315B0";
-
-ftImp4214724.ft_tpplid = "";
-ftImp4214724.ft_c = {};
-ftImp4214724.gdpr = "";
-ftImp4214724.gdpr_consent = "";
-ftImp4214724.gdpr_pd = "";
-ftImp4214724.oob_consent = "";
-ftImp4214724.gdprStoredConsent = "";
-ftImp4214724.us_privacy = "!!US_PRIVACY!";
-
-ftImp4214724.jsAppend = "1";
-(function(){
-    var tag = document.getElementById('ft_servedby_4214724') || (function(s){
-    	return s[s.length-1];
-    }(document.getElementsByTagName('script'))),
-           js = document.createElement('script');
-    js.src =
-"https://cdn.flashtalking.com/xre/421/4214724/3879790/js/j-4214724-3879790.js";
-    js.id = "ftscript_m4214724";
-    tag.parentNode.insertBefore(js, tag);
-}());
