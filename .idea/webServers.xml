@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b97305fc-505d-4078-9f51-72cd222bb3b4" name="lettuce" url="http://118.67.134.218">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="118.67.134.218" port="22" sshConfigId="9adb5a8e-30f9-4d90-9b9a-6840ab2a8c29" sshConfig="root@118.67.134.218:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
