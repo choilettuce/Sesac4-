@@ -1,6 +1,6 @@
 function login(id, pw, cb) {
     setTimeout(() => {
-        console.log("사용자 입장")
+        console.log("사용자 입장");
         cb(id);
     }, 3000);
 }
@@ -14,8 +14,8 @@ function getVideo (id, cb) {
 
 function getDetail(video, cb) {
     setTimeout(() => {
-        cb("비디오 제목은 :", video);
-}, 1000);
+        cb("비디오 제목은 :" + video);
+    }, 1000);
 }
 
 login('kim', '1234', user => {

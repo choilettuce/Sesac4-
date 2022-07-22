@@ -1,17 +1,18 @@
 const http = require('http');
-const fs = require('fs').promises
+const fs = require('fs');
 
-const server = http.createServer( async function(req, res) {
-    try{ 
-        const data = await fs.readFile('./hihi.html');
-        res.writeHead(200);
-        res.end(data);
-    }
-    catch(err) {
+const server = http.createServer( function(req, res) {
+ fs.readFile('./hihi.html', function(err, data) {
+    
+    if(err) {
         console.error(err);
         res.writeHead(404);
         res.end(err.message);
+    }else {
+        res.writeHead(200);
+        res.end(data);
     }
+} );
 })
 
 server.listen(7000, function(){

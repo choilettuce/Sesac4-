@@ -10,6 +10,7 @@ function login(id, pw, cb) {
 
 const user = login('kim', '1234' , user=> {
     console.log(user + "님 반갑습니다.");
+    
 });
 
 console.log("finish");

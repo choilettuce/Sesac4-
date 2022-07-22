@@ -27,6 +27,9 @@ class Car {
     back() {
         console.log("후진");
     }
+    returnColor () {
+        return this.returnColor()
+    }
 }
 
 var car1 = new Car("red");
@@ -34,3 +37,5 @@ var car2 = new Car("red");
 var car3 = new Car("red");
 var car4 = new Car("red");
 var car5 = new Car("red");
+
+module.exports = {Car};
