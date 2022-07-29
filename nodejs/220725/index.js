@@ -2,7 +2,7 @@ const express = require("express")
 const app = express();
 const port = 8080;
 const bodyParser = require("body-parser");
-const fs = require('fs');
+const fs = require('fs').promises;
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 app.use( bodyParser.json());
 
 app.get("/", function(req,res){
-    res.render("실습32");
+    res.render("회원가입");
 });
 
 // ! get
@@ -28,11 +28,12 @@ app.post("/receive", function(req,res){
     var pw = req.body.pw; 
      
     async function exec(){
-        fs.mkdir('./signup');
-        fs.writeFile('./signup/info.txt', `${id}//${name}//${pw}`);
+        await fs.mkdir('./signup');
+        await fs.writeFile('./signup/info.txt', `${id}//${name}//${pw}`,);
     }
 
-    res.render("/receive", req.body);
+    res.render("receive", req.body);
+    exec();
 });
 
 
