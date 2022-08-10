@@ -1,3 +1,4 @@
+
 // 실행되는 최상위 파일
 // Express 를 이용해 서버를 실행하는 로직이 담긴다.
 const express = require("express");
@@ -21,4 +22,5 @@ app.get("/", function(req,res){
 
 app.listen(port, ()=>{
     console.log( "Server Port : ", port );
-})
+
+});
