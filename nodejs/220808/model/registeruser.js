@@ -11,9 +11,10 @@ exports.get_register = (cb) => {
     var paramId = req.body.id
     var paramPW = req.body.pw
     var paramName = req.body.Name
-    var paramId = req.body.age
+    var paramage = req.body.age
 
-    cnn.query( 'SELECT * FROM register_user', (err, rows) => {
+    cnn.query(`INSERT INTO register_user VALUE('${paramId}','${paramPW}','${paramName}',${paramage})`, 
+    (err, rows) => {
         if ( err ) throw err;
         console.log( rows);
         cb(rows);

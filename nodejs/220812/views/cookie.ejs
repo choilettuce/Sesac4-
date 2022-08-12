@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log( document.cookie);
+        document.cookie = "user=sesac expires = Sat, 13 aug 2022 13:00:00 GMT; path=/";
+        // expire ->만료시간 설정, path -> 경로설정
+        // console.log( document.cookie);
+
+        var cookieArr = document.cookie.split(";");
+        // for (var i = 0; i < cookieArr.length; i++ )
+        for (var i in cookieArr) {
+            console.log(cookieArr[i]);
+        }
+    </script>
+
+</head>
+
+<body>
+    
+</body>
+</html>

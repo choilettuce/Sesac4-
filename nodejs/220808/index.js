@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: true}));
 app.use( bodyParser.json() );
 
 const router = require("./routes");
-app.use('/visitor', router);
+app.use('/login', router);
 
 app.listen(port, ()=>{
     console.log( "Server Port : ", port );
