@@ -14,7 +14,6 @@ const cookieConfig = {
 
 app.get("/", (req,res) => {
     res.cookie('key','value', cookieConfig);
-    res.cookie('key2','value2', cookieConfig);
     res.render("index");
 });
 
