@@ -1,4 +1,0 @@
-getJSON('api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units=metric')
-
-http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=fbb5223b63dfd5862ea66acc67284ca7&units=metric
-
