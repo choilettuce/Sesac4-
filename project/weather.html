@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+const getJSON = function(url, callback) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = "json";
+    xhr.onload = function() {
+        const status = xhr.status;
+        if (status === 200) {
+            callback(null, xhr.response);
+        }else {
+            callback(status, xhr.response);
+        }
+    };
+    xhr.send(); 
+}
+</script>
+<script>
+    /*
+    $.getJSON('파일경로', function(data){
+        //가져온 data로 할일!!
+    });
+    */
+    $.getJSON(`http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=fbb5223b63dfd5862ea66acc67284ca7&units=metric`, function(data){
+        //alert(data.list[0].main.temp_min);
+        var $Temp = data.list[0].main.temp;
+        var $minTemp = data.list[0].main.temp_min;
+        var $maxTemp = data.list[0].main.temp_max;
+        var $minTemp = data.list[0].main.temp_min;
+        //A.appendTo(B) B요소의 내용의 뒤에 A를 추가
+        //A.append(B) A요소의 내용의 뒤에 B를 추가
+        //A.prependTo(B) B요소의 내용의 앞에 A를 추가
+        //A.prepend(B) A요소의 내용의 앞에 B를 추가
+        $('.ctemp').append($minTemp);
+        $('.clowtemp').append($minTemp);
+        $('.chightemp').append($maxTemp);
+        
+    });
+    
+</script>
+<body>
+    <h1>weather api</h1>
+    <div class="ctemp">현재온도:</div>
+    <div class="clowtemp">최저온도:</div>
+    <div class="chightemp">최고온도:</div>
+    <div class="cicon">아이콘:</div>
+    
+</body>
+</html>
