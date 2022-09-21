@@ -59,7 +59,6 @@
         let num = 0;
         
         socket.emit('joinRoom', num, nickname);
-
         socket.emit("info2", { nickname: nickname });
         // socket.on("info", function(data){ console.log( data ); id = data;});
 

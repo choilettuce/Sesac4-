@@ -42,6 +42,26 @@ io.on("connection", function(socket){
     });
 });
 
+let room = ['room1', 'room2'];
+let a = 0;
+
+socket.on('leaveRoom', (num, nickname) => {
+    socket.leave(room[num], () => {
+      console.log(nickname + ' leave a ' + room[num]);
+      io.to(room[num]).emit('leaveRoom', num, nickname);
+    });
+  });
+
+
+  socket.on('joinRoom', (num, nickname) => {
+    socket.join(room[num], () => {
+      console.log(nickname + ' join a ' + room[num]);
+      io.to(room[num]).emit('joinRoom', num, nickname);
+    });
+  });
+
+
+
 http.listen( 8000, function(){
     console.log( "Server port : ", 8000 );
 });
