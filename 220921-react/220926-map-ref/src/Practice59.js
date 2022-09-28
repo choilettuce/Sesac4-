@@ -65,7 +65,6 @@ function Practice59() {
                 </tbody>
             </table>
         </div>
-    )
-        
-    
+    )   
 }
+export default Practice59;
