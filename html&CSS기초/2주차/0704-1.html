@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var cat = {
+            name: "나비",
+            age : 1,
+            mew: function(){
+                return "야옹";
+            }
+        };
+        console.log(cat);
+        console.log(cat.name);
+        console.log(cat.mew());
+
+        //배열
+        var arr1 = [12, 15, 18, 24, 29];
+        console.log(arr1.length);
+        arr1.push("91");
+        console.log(arr1);
+        arr1.pop();
+        console.log(arr1);
+        arr1.unshift(61);
+        console.log(arr1);
+        arr1.shift();
+        console.log(arr1);
+        
+        console.log(arr1.indexOf(18));
+
+
+        var me = {
+            name : 'SH' ,
+            birth : '0102'
+
+        };
+        me['gender'] = 'M';
+        console.log(me['gender']);
+
+        //참조자료형 
+        var a1 = [1, 2, 3, 4, 5];
+        var a2 = a1;
+        console.log("a1 : ", a1);
+        console.log("a2 : ", a2);
+        a1.pop();
+        console.log("a1 : ", a1);
+        console.log("a2 : ", a2);
+
+        //자료형확인
+        typeof('문자');
+        typeof(245);
+
+        // 형변환
+        Number('10');
+        
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
