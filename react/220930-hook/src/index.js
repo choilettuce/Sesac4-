@@ -13,8 +13,8 @@ import MovingCircle from './MovingCircle';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Hook />
-    <Reducer />
+    <Hook />
+    {/* <Reducer />
     <Memo></Memo> */}
     {/* <Origin />
     <hr/>
@@ -24,9 +24,9 @@ root.render(
     <hr />
     <StyeldComponent />
     <hr /> */}
-    <Worm></Worm>
+    {/* <Worm></Worm>
     <hr></hr>
-    <MovingCircle />
+    <MovingCircle /> */}
   </React.StrictMode>
 );
 
