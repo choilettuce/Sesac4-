@@ -3,10 +3,11 @@
 var str : string = 'hi';
 let num : number = 1;
 let flag : boolean = true;
-let age : number | string;
+let age : number | string | boolean; // union type
 age = 10;
 age = 'a';
-// 문자열 숫자 모두 가능
+age = true;
+// 문자열 숫자 불린 모두 가능
 
 let any : any;
 
